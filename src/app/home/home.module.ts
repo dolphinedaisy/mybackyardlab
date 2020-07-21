@@ -7,7 +7,6 @@ import { RouterModule } from '@angular/router';
 
 import { HomeComponent } from './home.component';
 
-import { SectionsModule } from '../sections/sections.module';
 import { NavbarComponent } from '../shared/navbar/navbar.component';
 import { QuestionComponent } from '../question/question.component';
 import { QDashboardComponent } from '../q-dashboard/q-dashboard.component';
@@ -18,7 +17,6 @@ import { QDashboardComponent } from '../q-dashboard/q-dashboard.component';
         BrowserModule,
         FormsModule,
         RouterModule,
-        SectionsModule,
         NgbModule,
     ],
     declarations: [
