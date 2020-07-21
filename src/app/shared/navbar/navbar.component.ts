@@ -53,4 +53,8 @@ export class NavbarComponent implements OnInit {
             return false;
         }
     }
+
+    onSignOut() {
+        this.router.navigate(['/']);
+    }
 }
