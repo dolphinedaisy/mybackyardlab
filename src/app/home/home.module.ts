@@ -9,6 +9,8 @@ import { HomeComponent } from './home.component';
 
 import { SectionsModule } from '../sections/sections.module';
 import { NavbarComponent } from '../shared/navbar/navbar.component';
+import { QuestionComponent } from '../question/question.component';
+import { QDashboardComponent } from '../q-dashboard/q-dashboard.component';
 
 @NgModule({
     imports: [
@@ -18,8 +20,13 @@ import { NavbarComponent } from '../shared/navbar/navbar.component';
         RouterModule,
         SectionsModule
     ],
-    declarations: [ HomeComponent, NavbarComponent ],
-    exports:[ HomeComponent ],
+    declarations: [
+        HomeComponent,
+        NavbarComponent,
+        QuestionComponent,
+        QDashboardComponent,
+    ],
+    exports: [ HomeComponent ],
     providers: []
 })
 export class HomeModule { }

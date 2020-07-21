@@ -5,11 +5,33 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
+import { QuestionComponent } from './question/question.component';
+import { QDashboardComponent } from './q-dashboard/q-dashboard.component';
 
 const routes: Routes = [
-    { path: 'home',             component: HomeComponent },
-    { path: 'login',            component: LoginComponent },
-    { path: '', redirectTo: 'login', pathMatch: 'full' }
+    {
+        path: 'home',
+        component: HomeComponent,
+        children: [
+            {
+                path: '', // child route path
+                component: QDashboardComponent // child route component that the router renders
+            },
+            {
+                path: 'q1', // child route path
+                component: QuestionComponent // child route component that the router renders
+            }
+        ]
+    },
+    {
+        path: 'login',
+        component: LoginComponent
+    },
+    {
+        path: '',
+        redirectTo: 'login',
+        pathMatch: 'full'
+    }
 ];
 
 @NgModule({
