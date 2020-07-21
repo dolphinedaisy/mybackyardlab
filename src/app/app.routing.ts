@@ -14,7 +14,7 @@ const routes: Routes = [
         component: HomeComponent,
         children: [
             {
-                path: '', // child route path
+                path: '', // child route  default path
                 component: QDashboardComponent // child route component that the router renders
             },
             {
