@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-q-dashboard',
@@ -7,13 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class QDashboardComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
 
   onStart(loadQuestion: string) {
-    console.log('Load this question : ', loadQuestion);
+    this.router.navigate(['/home/q1']);
   }
 
 }
