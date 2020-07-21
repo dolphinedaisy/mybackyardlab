@@ -18,7 +18,8 @@ import { QDashboardComponent } from '../q-dashboard/q-dashboard.component';
         BrowserModule,
         FormsModule,
         RouterModule,
-        SectionsModule
+        SectionsModule,
+        NgbModule,
     ],
     declarations: [
         HomeComponent,
