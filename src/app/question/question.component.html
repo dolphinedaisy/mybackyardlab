@@ -32,14 +32,19 @@
                     </div>
                 </div>
                 <div class="row px-3">
-                    <div class="col-lg-2 border py-3">
-                        <img (click)="loadEmptyComponent()" class="mx-3" height="30" width="30" src="assets/img/mybackyardlab/empty-circle.svg" alt="">
-                        <img (click)="loadFilledComponent()" class="mx-3" height="30" width="30" src="assets/img/mybackyardlab/filled-circle.svg" alt="">
+                    <div class="offset-lg-2 col-lg-10 text-center mb-3">
+                        <input style="width: 150px" class="mr-3 d-inline form-control" type="number" placeholder="Total" />
                     </div>
-                    <div class="col-lg-5 border">
+                </div>
+                <div class="row px-3">
+                    <div class="col-lg-2 border py-3">
+                        <img (click)="loadEmptyComponent()" class="mx-3 cursor-pointer" height="30" width="30" src="assets/img/mybackyardlab/empty-circle.svg" alt="">
+                        <img (click)="loadFilledComponent()" class="mx-3 cursor-pointer" height="30" width="30" src="assets/img/mybackyardlab/filled-circle.svg" alt="">
+                    </div>
+                    <div class="col-lg-5 border py-3">
                         <ng-template empty-circle></ng-template>
                     </div>
-                    <div class="col-lg-5 border">
+                    <div class="col-lg-5 border py-3">
                         <ng-template filled-circle></ng-template>
                     </div>
                 </div>
