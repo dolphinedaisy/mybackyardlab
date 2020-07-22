@@ -10,6 +10,9 @@ import { HomeComponent } from './home.component';
 import { NavbarComponent } from '../shared/navbar/navbar.component';
 import { QuestionComponent } from '../question/question.component';
 import { QDashboardComponent } from '../q-dashboard/q-dashboard.component';
+import { CompEmptyCircleComponent } from '../dynamic-load/comp-empty-circle.component';
+import { CompFilledCircleComponent } from '../dynamic-load/comp-filled-circle.component';
+import { EmptyCircleDirective, FilledCircleDirective } from '../dynamic-load/add.directive';
 
 @NgModule({
     imports: [
@@ -24,8 +27,16 @@ import { QDashboardComponent } from '../q-dashboard/q-dashboard.component';
         NavbarComponent,
         QuestionComponent,
         QDashboardComponent,
+        CompEmptyCircleComponent,
+        CompFilledCircleComponent,
+        EmptyCircleDirective,
+        FilledCircleDirective
     ],
     exports: [ HomeComponent ],
+    entryComponents: [
+        CompFilledCircleComponent,
+        CompEmptyCircleComponent
+    ],
     providers: []
 })
 export class HomeModule { }

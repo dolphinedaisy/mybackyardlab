@@ -26,21 +26,21 @@
                         <p class="lead d-inline">
                             Rose drew 3 pictures and willie drew 4 pictures. How many pictures did they draw all together?
                         </p>
-                        <div class="btn btn-block d-inline" (click)="onSpeech()">
+                        <div class="btn btn-block d-inline">
                             <img height="30" width="30" src="assets/img/mybackyardlab/speaker.svg" alt="Listen">
                         </div>
                     </div>
                 </div>
                 <div class="row px-3">
                     <div class="col-lg-2 border py-3">
-                        <img class="mx-3" height="30" width="30" src="assets/img/mybackyardlab/empty-circle.svg" alt="">
-                        <img class="mx-3" height="30" width="30" src="assets/img/mybackyardlab/filled-circle.svg" alt="">
+                        <img (click)="loadEmptyComponent()" class="mx-3" height="30" width="30" src="assets/img/mybackyardlab/empty-circle.svg" alt="">
+                        <img (click)="loadFilledComponent()" class="mx-3" height="30" width="30" src="assets/img/mybackyardlab/filled-circle.svg" alt="">
                     </div>
                     <div class="col-lg-5 border">
-
+                        <ng-template empty-circle></ng-template>
                     </div>
                     <div class="col-lg-5 border">
-
+                        <ng-template filled-circle></ng-template>
                     </div>
                 </div>
                 <div class="row">
